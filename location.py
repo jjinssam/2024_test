@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the CSV file from the provided GitHub link@st.cachedef load_data():
-data = pd.read_csv('성씨_인구.csv')
+data = pd.read_csv('/성씨_인구.csv')
 st.write(data)
 
 # Load the data
