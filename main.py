@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.write('Hello, *World!* :sunglasses:')
-st.title('간단한 인사말 생성기')
+st.title('당신의 음식 취향')
 
 title = st.text_input("이름을 입력하세요:", placeholder="한글이름")
 option = st.selectbox(
