@@ -11,7 +11,7 @@ if st.button("선택 후 눌러주세요", type="primary"):
 else:
     st.write("선택 대기중")
 
-if st.button("입력 초기화", type="primary"):
-    st.session_state.name = ""
-    st.session_state.food = ""
+#if st.button("입력 초기화", type="primary"):
+#    st.session_state.name = ""
+#    st.session_state.food = ""
 
