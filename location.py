@@ -29,10 +29,10 @@ if st.button("검색"):
     else:
         st.write("Please select a region and enter a last name.")
 
-    st.write(location, "Top 5 surnames")
+#    st.write(location, "Top 5 surnames")
 
 # Display top 5 surnames in the selected regionif location != "nationwide":
-    top_surnames = data[data['region'] == location].nlargest(5, 'population')[['surname', 'population']]
-    st.table(top_surnames)
+#    top_surnames = data[data['region'] == location].nlargest(5, 'population')[['surname', 'population']]
+#    st.table(top_surnames)
 else:
     st.write("Please select a specific region to see the top 5 surnames.")
