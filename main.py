@@ -14,5 +14,4 @@ else:
 if st.button("입력 초기화", type="primary"):
     st.session_state.name = ""
     st.session_state.food = ""
-    st.text_input
 
