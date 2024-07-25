@@ -8,10 +8,7 @@ option = st.selectbox(
     "좋아하는 음식을 선택하세요:",
     ("망고빙수", "우유빙수", "복숭아빙수", "팥빙수"))
 
-if st.button("선택초기화", type="primary"):
-    title=""
-    option=""
-if st.button("선택 후 눌러주세요"):
+if st.button("선택 후 눌러주세요", type="primary"):
     st.write(title,"씨가 좋아하는 음식은",option,"입니다.")
 else:
     st.write("선택 대기중")
