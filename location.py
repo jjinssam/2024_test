@@ -24,7 +24,8 @@ if st.button("검색"):
         
         if not filtered_data.empty:
             population_count = filtered_data.iloc[0]['population']
-            st.write(f"In {location}, there are {population_count} people with the last name {family_name}.")
+            fullname_c = filtered_data.iloc[0]['fullname']
+            st.write(f"In {location}, there are {population_count} people with the last name {fullname_c}.")
         else:
             st.write(f"No data found for the last name {family_name} in {location}.")
     else:
