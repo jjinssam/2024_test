@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the CSV file 
-data = pd.read_csv('population_name.csv)
+data = pd.read_csv('population_name.csv')
 
 # Streamlit app
 st.title("지역 및 성씨별 인구 데이터 조회")
