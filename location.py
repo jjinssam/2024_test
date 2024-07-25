@@ -4,6 +4,7 @@ import pandas as pd
 # Load the CSV file from the provided GitHub link@st.cachedef load_data():
 #url = "https://github.com/jjinssam/2024_test/raw/main/성씨_인구.csv"
 data = pd.read_csv('성씨_인구.csv')
+st.write(data)
 
 # Load the data
 #data = load_data()
