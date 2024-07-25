@@ -3,10 +3,10 @@ import pandas as pd
 
 # Load the CSV file from the provided GitHub link@st.cachedef load_data():
 url = "https://github.com/jjinssam/2024_test/raw/main/성씨_인구.csv"
-data = pd.read_csv(url)
+return pd.read_csv(url)
 
 # Load the data
-# data = load_data()
+data = load_data()
 
 # Streamlit app
 st.title("지역 및 성씨별 인구 데이터 조회")
