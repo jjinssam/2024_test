@@ -20,9 +20,9 @@ family_name = st.text_input("성씨를 입력하세요:")
 if st.button("검색"):
     filtered_data = data[(data['region'] == location) & (data['surname'] == family_name)]
     if not filtered_data.empty:
-        st.write(f"{location}에서 '{family_name}' 성씨를 가진 사람들:")
+        st.write(f"{location}에서 '{family_name}'씨 인구 수:")
         st.table(filtered_data)
     else:
-        st.write(f"{location}에서 '{family_name}' 성씨를 가진 데이터를 찾을 수 없습니다.")
+        st.write(f"{location}에서 '{family_name}' 씨를 가진 데이터를 찾을 수 없습니다.")
 else:
     st.write("지역과 성씨를 입력하고 '검색' 버튼을 눌러주세요.")
