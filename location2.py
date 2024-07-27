@@ -19,10 +19,10 @@ family_name = st.text_input("성씨를 입력하세요:")
     # Filter data based on the selected location and entered last name
 if st.button("검색"):
     filtered_data = data[(data['region'] == location) & (data['surname'] == family_name)]
-    filtered_data = filtered_data.drop(filtered_data.columns[0])
+    filtered_data_new = filtered_data.drop(filtered_data.columns[0], axis=1)
     if not filtered_data.empty:
         st.write(f"{location}에서 '{family_name}'씨 인구 수:")
-        st.table(filtered_data)
+        st.table(filtered_data_new)
     else:
         st.write(f"{location}에서 '{family_name}' 씨를 가진 데이터를 찾을 수 없습니다.")
 else:
