@@ -1,0 +1,31 @@
+import streamlit as st
+import requests
+import pandas as pd
+
+# Function to fetch real-time bus data
+def get_bus_data():
+    api_key = '7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi%2FA6RrxDW7v2eh61RvZYTY29e1WFiL0u9xtucq%2FJ3l6DHA3Q%3D%3D'
+    url = f'http://api_url_here?serviceKey={api_key}'
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        data = response.json()
+        # Process the data to a pandas DataFrame if necessary
+        bus_data = pd.DataFrame(data['busInfo'])  # Adjust based on the actual structure of the API response
+        return bus_data
+    else:
+        st.error("Failed to fetch bus data")
+        return None
+
+# Streamlit app
+st.title("Real-time Bus Location")
+
+# Fetch bus data
+bus_data = get_bus_data()
+
+# Display bus data
+if bus_data is not None:
+    st.write("Real-time Bus Locations")
+    st.table(bus_data)
+else:
+    st.write("No data available at the moment.")
