@@ -8,6 +8,7 @@ def get_bus_data():
     api_key='7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi/A6RrxDW7v2eh61RvZYTY29e1WFiL0u9xtucq/J3l6DHA3Q=='
     url = f'http://api_url_here?serviceKey={api_key}'
     response = requests.get(url)
+    s.write(response)
     
     if response.status_code == 200:
         data = response.json()
