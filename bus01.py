@@ -7,7 +7,7 @@ api_key='7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi/A6RrxDW7v2eh61RvZYTY29e1WFiL0u9
 # url = f'﻿http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt?ServiceKey={api_key}&busRouteId=100100118&startOrd=1&endOrd=13'
 #  url = f'﻿http://ws.bus.go.kr/api/rest/buspos/getBusPosByRtid?serviceKey={api_key}'
 #test code
-url= 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt?ServiceKey=api_key&busRouteId=100100118&startOrd=1&endOrd=13'
+url= 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt?ServiceKey=api_key&busRouteId=100100016&startOrd=1&endOrd=13'
 # url = 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt'
 # params ={'serviceKey' : api_key, 'busRouteId' : '', 'startOrd' : '1', 'endOrd' : '10' }
 # response = requests.get(url, params=params)
@@ -19,7 +19,7 @@ def get_bus_data():
   #  st.write(url)
   #  response = requests.get(url)
     st.write(response)  #추가
-  '''  
+'''  
     if response.status_code == 200:
         data = response.json()
         # Process the data to a pandas DataFrame if necessary
