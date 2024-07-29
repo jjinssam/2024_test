@@ -7,12 +7,12 @@ api_key='7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi/A6RrxDW7v2eh61RvZYTY29e1WFiL0u9
 # url = f'﻿http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt?ServiceKey={api_key}&busRouteId=100100118&startOrd=1&endOrd=13'
 #  url = f'﻿http://ws.bus.go.kr/api/rest/buspos/getBusPosByRtid?serviceKey={api_key}'
 #test code
-url = 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt'
-params ={'serviceKey' : api_key, 'busRouteId' : '', 'startOrd' : '1', 'endOrd' : '10' }
-
-response = requests.get(url, params=params)
+url= 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt?ServiceKey=api_key&busRouteId=100100118&startOrd=1&endOrd=13'
+# url = 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt'
+# params ={'serviceKey' : api_key, 'busRouteId' : '', 'startOrd' : '1', 'endOrd' : '10' }
+# response = requests.get(url, params=params)
+response = requests.get(url)
 st.write(response.content)
-
 
 # Function to fetch real-time bus data
 def get_bus_data():
