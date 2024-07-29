@@ -34,7 +34,7 @@ end_point = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList"
 parameters = "?ServiceKey=" + "7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi/A6RrxDW7v2eh61RvZYTY29e1WFiL0u9xtucq/J3l6DHA3Q=="
 end_point = end_point + parameters + "&strSrch=" + "110" # 110번 버스를 검색하고 싶다
 # test
-st.write(end_point)
+# st.write(end_point)
 retData = get_request_url(end_point)
 
 st.write(retData)
