@@ -7,7 +7,7 @@ url = 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt'
 params ={'serviceKey' : '7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi%2FA6RrxDW7v2eh61RvZYTY29e1WFiL0u9xtucq%2FJ3l6DHA3Q%3D%3D', 'busRouteId' : '', 'startOrd' : '1', 'endOrd' : '10' }
 
 response = requests.get(url, params=params)
-print(response.content)
+st.write(response.content)
 
 # Function to fetch real-time bus data
 def get_bus_data():
