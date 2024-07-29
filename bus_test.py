@@ -28,11 +28,11 @@ def get_request_url(url):
         return None
 
 # 사용할 API의 Call back URL
-   	end_point = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList"
+end_point = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList"
     
-	# 해당 API가 필요로 하는 파라미터 : 인증키와 검색어
-	parameters = "?ServiceKey=" + "7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi/A6RrxDW7v2eh61RvZYTY29e1WFiL0u9xtucq/J3l6DHA3Q=="
-	end_point = end_point + parameters + "&strSrch=" + "110" # 110번 버스를 검색하고 싶다
-	retData = get_request_url(end_point)
-    
-	st.write(retData)
+# 해당 API가 필요로 하는 파라미터 : 인증키와 검색어
+parameters = "?ServiceKey=" + "7LxzdtBw0bYtbx4A4BmxQRkAcrE1pFipyUFEyMi/A6RrxDW7v2eh61RvZYTY29e1WFiL0u9xtucq/J3l6DHA3Q=="
+end_point = end_point + parameters + "&strSrch=" + "110" # 110번 버스를 검색하고 싶다
+retData = get_request_url(end_point)
+
+st.write(retData)
