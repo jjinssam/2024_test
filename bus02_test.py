@@ -9,6 +9,6 @@ url = f'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt?ServiceKey={api_k
 response = requests.get(url)
 
 if response.status_code == 200:
-    st.write(response.content,'utf-8')
+    st.write(response.text)
 else:
     st.error(f"API 요청 실패: {response.status_code}")
