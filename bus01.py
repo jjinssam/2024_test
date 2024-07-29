@@ -13,6 +13,7 @@ params ={'serviceKey' : api_key, 'busRouteId' : '', 'startOrd' : '1', 'endOrd' :
 response = requests.get(url, params=params)
 st.write(response.content)
 
+'''
 # Function to fetch real-time bus data
 def get_bus_data():
     st.write(url)
@@ -40,3 +41,4 @@ if bus_data is not None:
     st.table(bus_data)
 else:
     st.write("No data available at the moment.")
+'''
