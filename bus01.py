@@ -13,13 +13,13 @@ params ={'serviceKey' : api_key, 'busRouteId' : '', 'startOrd' : '1', 'endOrd' :
 response = requests.get(url, params=params)
 st.write(response.content)
 
-'''
+
 # Function to fetch real-time bus data
 def get_bus_data():
-    st.write(url)
-    response = requests.get(url)
+  #  st.write(url)
+  #  response = requests.get(url)
     st.write(response)  #추가
-    
+  '''  
     if response.status_code == 200:
         data = response.json()
         # Process the data to a pandas DataFrame if necessary
