@@ -5,7 +5,7 @@ st.title('기사 작성 로봇!!')
 
 name = st.text_input("기자:",  placeholder="작성자 이름")
 #food = st.selectbox("좋아하는 음식을 선택하세요:",("")
-stadium = st.selectbox("경기장 선택 :", ("","KIA", "삼성", "LG", "두산", "SSG", "KT", "한화", "롯데", "NC", "키움") )
+stadium = st.selectbox("경기장 선택 :", ("","잠실", "고척", "창원", "대구", "광주", "인천", "수원", "사직", "대전") )
 winner = st.selectbox("우승팀 선택 :", ("","KIA", "삼성", "LG", "두산", "SSG", "KT", "한화", "롯데", "NC", "키움"))
 loser = st.selectbox("진팀 선택 :", ("","KIA", "삼성", "LG", "두산", "SSG", "KT", "한화", "롯데", "NC", "키움"))
 mvp = st.text_input("우수선수 :",  placeholder="오늘 경기의 MVP")
