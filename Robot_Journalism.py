@@ -23,6 +23,7 @@ with col2:
         st.write(f"{winner}와(과) {loser}은(는) 치열한 공방전을 펼쳤습니다.")
         st.write(f"{mvp}이(가) 맹활약을 하였습니다.")
         st.write(f"결국 {winner}이(가) {loser}을(를) {score}로 이겼습니다.")
+        st.write(f"작성자 : {name}")
         st.write("=" * 42)
     else:
         st.write("=" * 42)
