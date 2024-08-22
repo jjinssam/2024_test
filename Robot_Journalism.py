@@ -18,11 +18,13 @@ with col1:
 # Right column for output
 with col2:
     if st.button("왼쪽 항목을 선택 후 클릭", type="primary"):
-        st.write("=" * 50)
+        st.write("=" * 42)
         st.write(f"오늘 {stadium}에서 야구 경기가 열렸습니다.")
         st.write(f"{winner}와(과) {loser}은(는) 치열한 공방전을 펼쳤습니다.")
         st.write(f"{mvp}이(가) 맹활약을 하였습니다.")
         st.write(f"결국 {winner}이(가) {loser}을(를) {score}로 이겼습니다.")
-        st.write("=" * 50)
+        st.write("=" * 42)
     else:
-        st.write("선택 대기중")
+        st.write("=" * 42)
+        st.write("기사 작성 대기중")
+        st.write("=" * 42)
